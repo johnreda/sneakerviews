@@ -1,0 +1,25 @@
+{
+  "name": "sneakerviews",
+  "version": "1.0.0",
+  "description": "Sneakerviews is an application that scrapes sneakernews.com and presents the headline and main image, allowing you to judge a pair of sneakers \"by their cover.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnreda/sneakerviews.git"
+  },
+  "author": "John Reda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnreda/sneakerviews/issues"
+  },
+  "homepage": "https://github.com/johnreda/sneakerviews#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.19",
+    "request": "^2.72.0"
+  }
+}
