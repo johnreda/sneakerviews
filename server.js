@@ -3,6 +3,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
+var request = require('request');
+var cheerio = require('cheerio');	
 
 
 
@@ -15,7 +17,7 @@ app.use(express.static('public'));
 
 
 //========== CONFIGURE DB =================
-mongoose.connect('mongodb://localhost/');
+mongoose.connect('mongodb://localhost/classconnection'); //<---NEED TO UPDATE WITH THE RIGHT MONGODB URL
 var db = mongoose.connection;
 
 db.on('error', function (err){
@@ -30,3 +32,15 @@ db.once('open', function (){
 //=========== SCHEMAS ======================
 var article = require('./models/article.js');
 var comments = require('./models/comments.js');
+
+
+
+//=========== ROUTES ======================
+
+
+
+app.listen(3000, function() {
+  console.log('App running on port 3000!');
+});
+
+
